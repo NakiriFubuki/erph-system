@@ -52,6 +52,20 @@ A modern **Electronic Resource Planning for Higher education** platform that hel
 
 ---
 
+## 🎬 **Project Video**
+
+🎥 Watch the ERPH System demo video on Google Drive:
+
+👉 **[Open Video Demo](https://drive.google.com/file/d/1HfUXT0iRp97tyrfkdXTDr6U6Szdxz_uG/view?usp=sharing)**
+
+<p align="center">
+  <a href="https://drive.google.com/file/d/1HfUXT0iRp97tyrfkdXTDr6U6Szdxz_uG/view?usp=sharing">
+    <img src="https://img.shields.io/badge/▶_Watch_Demo_Video-Google%20Drive-4285F4?style=for-the-badge&logo=googledrive&logoColor=white" alt="Watch Demo Video" />
+  </a>
+</p>
+
+---
+
 ## 🚀 **Quick Start**
 
 ### 1️⃣ Requirements
