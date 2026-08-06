@@ -238,6 +238,7 @@ ob_end_flush();
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><?= t('login.title') ?></title>
   <link rel="stylesheet" href="assets/css/login.css?v=<?= filemtime(__DIR__ . '/assets/css/login.css') ?>">
+  <?php include __DIR__ . '/inc/shot_assets.php'; ?>
   <style>
     body.login-page {
       <?php 

@@ -14,6 +14,7 @@ $user_role = $activeAccount['role'];
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><?= t('manual.title', 'User Manual') ?></title>
   <link rel="stylesheet" href="assets/css/manual.css?v=<?= @filemtime(__DIR__ . '/assets/css/manual.css') ?>">
+  <?php include __DIR__ . '/inc/shot_assets.php'; ?>
   <style>
     /* Reset styles */
     * {

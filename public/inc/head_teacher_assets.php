@@ -9,5 +9,6 @@ $v = function ($file) use ($cssBase) {
 <link rel="stylesheet" href="<?= $cssBase ?>/teacher-common.css?v=<?= $v($cssBase . '/teacher-common.css') ?>">
 <link rel="stylesheet" href="<?= $cssBase ?>/glyphs.css?v=<?= $v($cssBase . '/glyphs.css') ?>">
 <link rel="stylesheet" href="<?= $cssBase ?>/mobile-optimization.css?v=<?= $v($cssBase . '/mobile-optimization.css') ?>">
+<?php include __DIR__ . '/shot_assets.php'; ?>
 <script src="assets/js/surface-lock.js"></script>
 <script src="assets/js/glyph-runtime.js"></script>
