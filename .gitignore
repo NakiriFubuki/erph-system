@@ -1,0 +1,29 @@
+# Dependencies / vendor
+/vendor/
+/node_modules/
+
+# Local overrides & secrets
+config.local.php
+.env
+.env.*
+!.env.example
+
+# Uploads & runtime files
+/public/uploads/avatars/*
+/public/uploads/backgrounds/*
+!/public/uploads/avatars/.gitkeep
+!/public/uploads/backgrounds/.gitkeep
+
+# Nested duplicate tree (keep main project only)
+/ERPH/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+*.log
+
+# Temporary helpers
+public/_shot_login.php

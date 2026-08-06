@@ -1,0 +1,225 @@
+/* Unified dark mode - ERPH1 blue-white theme */
+[data-theme="dark"] {
+    --bg-primary: #0f172a;
+    --bg-secondary: #1e293b;
+    --text-primary: #f8fafc;
+    --text-secondary: #e2e8f0;
+    --text-muted: #94a3b8;
+    --border-color: #334155;
+    --shadow-color: rgba(0, 0, 0, 0.35);
+    --accent-color: #60a5fa;
+    --accent-hover: #93c5fd;
+    --header-bg: linear-gradient(120deg, #1e3a8a 0%, #1d4ed8 50%, #2563eb 100%);
+    --card-border: #60a5fa;
+    --success-bg: #064e3b;
+    --success-text: #6ee7b7;
+    --success-border: #10b981;
+    --error-bg: #1e3a8a;
+    --error-text: #93c5fd;
+    --error-border: #3b82f6;
+    --warning-bg: #1e3a8a;
+    --warning-text: #93c5fd;
+    --warning-border: #3b82f6;
+    --card-hover-bg: #334155;
+    --card-hover-shadow: rgba(0, 0, 0, 0.5);
+    --gradient-start: #0c4a6e;
+    --gradient-end: #2563eb;
+}
+
+/* Page-wide styles in dark mode */
+[data-theme="dark"] body {
+    background: linear-gradient(135deg, var(--bg-primary), #1a1f24);
+    background-attachment: fixed;
+    color: var(--text-primary);
+}
+
+/* Form containers in dark mode */
+[data-theme="dark"] .form-container {
+    background: var(--bg-secondary) !important;
+    border: 1px solid var(--border-color) !important;
+    box-shadow: 0 4px 20px var(--shadow-color) !important;
+    color: var(--text-primary) !important;
+}
+
+[data-theme="dark"] .form-container:hover {
+    background: var(--card-hover-bg) !important;
+    box-shadow: 0 6px 25px var(--card-hover-shadow) !important;
+    border-color: var(--accent-color) !important;
+}
+
+/* Form elements in dark mode */
+[data-theme="dark"] .form-group input,
+[data-theme="dark"] .form-group select,
+[data-theme="dark"] .form-group textarea {
+    background: var(--bg-primary) !important;
+    color: var(--text-primary) !important;
+    border: 2px solid var(--border-color) !important;
+}
+
+[data-theme="dark"] .form-group input:focus,
+[data-theme="dark"] .form-group select:focus,
+[data-theme="dark"] .form-group textarea:focus {
+    border-color: var(--accent-color) !important;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.25) !important;
+}
+
+/* Labels in dark mode */
+[data-theme="dark"] .form-group label {
+    color: var(--text-primary) !important;
+}
+
+/* Checkbox groups in dark mode */
+[data-theme="dark"] .checkbox-item {
+    background: rgba(59, 130, 246, 0.1) !important;
+    border: 1px solid var(--border-color) !important;
+    color: var(--text-primary) !important;
+}
+
+[data-theme="dark"] .checkbox-item:hover {
+    background: rgba(59, 130, 246, 0.2) !important;
+    border-color: var(--accent-color) !important;
+}
+
+[data-theme="dark"] .checkbox-item label {
+    color: var(--text-primary) !important;
+}
+
+/* Buttons in dark mode */
+[data-theme="dark"] .btn {
+    background: linear-gradient(135deg, var(--accent-color), var(--accent-hover)) !important;
+    color: white !important;
+    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3) !important;
+}
+
+[data-theme="dark"] .btn:hover {
+    background: linear-gradient(135deg, var(--accent-hover), var(--accent-color)) !important;
+    box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4) !important;
+}
+
+/* Messages in dark mode */
+[data-theme="dark"] .message.success {
+    background: var(--success-bg) !important;
+    color: var(--success-text) !important;
+    border: 1px solid var(--success-border) !important;
+}
+
+[data-theme="dark"] .message.error {
+    background: var(--error-bg) !important;
+    color: var(--error-text) !important;
+    border: 1px solid var(--error-border) !important;
+}
+
+/* Back links in dark mode */
+[data-theme="dark"] .back-link {
+    color: var(--accent-color) !important;
+}
+
+[data-theme="dark"] .back-link:hover {
+    background: rgba(59, 130, 246, 0.2) !important;
+    transform: translateX(-4px) !important;
+    box-shadow: 0 2px 8px rgba(59, 130, 246, 0.2), 0 0 0 1px var(--accent-color) !important;
+}
+
+/* Password hints in dark mode */
+[data-theme="dark"] .password-note {
+    color: var(--text-muted) !important;
+}
+
+/* Responsive design in dark mode */
+@media (max-width: 768px) {
+    [data-theme="dark"] .form-container {
+        background: var(--bg-secondary) !important;
+        border: 1px solid var(--border-color) !important;
+    }
+}
+
+/* Special effects in dark mode */
+[data-theme="dark"] .form-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--gradient-start), var(--gradient-end));
+    opacity: 0.9;
+    border-radius: 12px 12px 0 0;
+}
+
+/* Input placeholders in dark mode */
+[data-theme="dark"] .form-group input::placeholder,
+[data-theme="dark"] .form-group textarea::placeholder {
+    color: var(--text-muted) !important;
+    opacity: 0.7;
+}
+
+/* Select options in dark mode */
+[data-theme="dark"] .form-group select option {
+    background: var(--bg-primary) !important;
+    color: var(--text-primary) !important;
+}
+
+/* Scrollbars in dark mode */
+[data-theme="dark"] ::-webkit-scrollbar {
+    width: 8px;
+}
+
+[data-theme="dark"] ::-webkit-scrollbar-track {
+    background: var(--bg-primary);
+}
+
+[data-theme="dark"] ::-webkit-scrollbar-thumb {
+    background: var(--border-color);
+    border-radius: 4px;
+}
+
+[data-theme="dark"] ::-webkit-scrollbar-thumb:hover {
+    background: var(--accent-color);
+}
+
+/* Focus outlines in dark mode */
+[data-theme="dark"] *:focus {
+    outline: 2px solid var(--accent-color) !important;
+    outline-offset: 2px !important;
+}
+
+/* Animations in dark mode */
+[data-theme="dark"] .form-container,
+[data-theme="dark"] .btn,
+[data-theme="dark"] .checkbox-item {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+/* Shadows in dark mode */
+[data-theme="dark"] .form-container {
+    box-shadow: 
+        0 4px 20px var(--shadow-color),
+        0 0 0 1px var(--border-color),
+        inset 0 1px 0 rgba(255, 255, 255, 0.05) !important;
+}
+
+/* Enhanced hover effects in dark mode */
+[data-theme="dark"] .form-container:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 
+        0 8px 30px var(--card-hover-shadow),
+        0 0 0 1px var(--accent-color),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Enhanced button hover effects in dark mode */
+[data-theme="dark"] .btn:hover {
+    transform: translateY(-1px) !important;
+    box-shadow: 
+        0 6px 20px rgba(96, 165, 250, 0.4),
+        0 0 0 1px var(--accent-color) !important;
+}
+
+/* Enhanced checkbox hover effects in dark mode */
+[data-theme="dark"] .checkbox-item:hover {
+    transform: translateY(-1px) !important;
+    box-shadow: 
+        0 4px 12px rgba(59, 130, 246, 0.2),
+        0 0 0 1px var(--accent-color) !important;
+}
+

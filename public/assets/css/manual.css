@@ -1,0 +1,154 @@
+/* User Manual — step-by-step guides */
+.manual-toc {
+  background: rgba(37, 99, 235, 0.06);
+  border: 1px solid rgba(37, 99, 235, 0.18);
+  border-radius: 14px;
+  padding: 20px 24px;
+  margin-bottom: 32px;
+}
+
+.manual-toc h3 {
+  color: #1d4ed8;
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.manual-toc ol {
+  margin: 0;
+  padding-left: 22px;
+  columns: 2;
+  column-gap: 24px;
+}
+
+.manual-toc a {
+  color: #334155;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+.manual-toc a:hover {
+  color: #1d4ed8;
+  text-decoration: underline;
+}
+
+.guide-block {
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(37, 99, 235, 0.2);
+  border-radius: 14px;
+  padding: 24px 28px;
+  margin-bottom: 20px;
+  border-left: 5px solid #2563eb;
+  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.08);
+}
+
+.guide-block h3 {
+  color: #1e3a8a;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.guide-block .guide-intro {
+  color: #64748b;
+  font-size: 14px;
+  margin-bottom: 16px;
+  line-height: 1.5;
+}
+
+.guide-steps {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  counter-reset: step;
+}
+
+.guide-steps li {
+  position: relative;
+  padding: 12px 12px 12px 52px;
+  margin-bottom: 10px;
+  background: rgba(239, 246, 255, 0.7);
+  border-radius: 10px;
+  color: #1e293b;
+  font-size: 15px;
+  line-height: 1.55;
+  counter-increment: step;
+}
+
+.guide-steps li::before {
+  content: counter(step);
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #1d4ed8, #3b82f6);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.guide-tip {
+  margin-top: 12px;
+  padding: 10px 14px;
+  background: #fffbeb;
+  border: 1px solid #fcd34d;
+  border-radius: 8px;
+  color: #92400e;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+[data-theme="dark"] .manual-toc {
+  background: rgba(30, 58, 138, 0.5);
+  border-color: rgba(96, 165, 250, 0.25);
+}
+
+[data-theme="dark"] .manual-toc h3,
+[data-theme="dark"] .guide-block h3 {
+  color: #93c5fd;
+}
+
+[data-theme="dark"] .manual-toc a {
+  color: #cbd5e1;
+}
+
+[data-theme="dark"] .guide-block {
+  background: rgba(30, 58, 138, 0.75);
+  border-color: rgba(96, 165, 250, 0.3);
+}
+
+[data-theme="dark"] .guide-block .guide-intro {
+  color: #94a3b8;
+}
+
+[data-theme="dark"] .guide-steps li {
+  background: rgba(15, 23, 42, 0.45);
+  color: #e2e8f0;
+}
+
+[data-theme="dark"] .guide-tip {
+  background: rgba(146, 64, 14, 0.25);
+  border-color: rgba(252, 211, 77, 0.4);
+  color: #fde68a;
+}
+
+@media (max-width: 720px) {
+  .manual-toc ol {
+    columns: 1;
+  }
+
+  .guide-block {
+    padding: 18px;
+  }
+
+  .guide-steps li {
+    padding-left: 48px;
+    font-size: 14px;
+  }
+}

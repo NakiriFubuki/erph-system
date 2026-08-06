@@ -1,0 +1,84 @@
+/* ERPH inline SVG glyphs */
+.erph-glyph {
+  display: inline-block;
+  vertical-align: -0.15em;
+  flex-shrink: 0;
+}
+
+.dropdown-icon .erph-glyph,
+.nav-glyph {
+  width: 1.15em;
+  height: 1.15em;
+}
+
+.function-icon .erph-glyph,
+.feature-icon .erph-glyph,
+.stat-icon .erph-glyph,
+.no-reports-icon .erph-glyph,
+.no-courses-icon .erph-glyph,
+.no-plans-icon .erph-glyph,
+.no-activities-icon .erph-glyph,
+.manage-icon .erph-glyph,
+.btn-icon .erph-glyph,
+.notes-icon .erph-glyph,
+.label-icon .erph-glyph,
+.tips-icon .erph-glyph,
+.activity-icon .erph-glyph,
+.no-activity-icon .erph-glyph {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.function-icon,
+.feature-icon,
+.stat-icon,
+.no-reports-icon,
+.no-courses-icon,
+.no-plans-icon,
+.no-activities-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent-color, #1d4ed8);
+}
+
+.admin-sidebar .brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.admin-sidebar .brand .erph-glyph {
+  width: 1.35em;
+  height: 1.35em;
+  color: var(--accent-color, #1d4ed8);
+}
+
+.admin-sidebar .menu a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.admin-sidebar .nav-glyph {
+  opacity: 0.72;
+}
+
+.admin-sidebar .menu a.active .nav-glyph {
+  opacity: 1;
+}
+
+.back-icon .erph-glyph {
+  width: 1.1em;
+  height: 1.1em;
+}
+
+.status-glyph .erph-glyph {
+  width: 1em;
+  height: 1em;
+}
+
+.avatar-edit-btn .erph-glyph {
+  width: 1em;
+  height: 1em;
+}
