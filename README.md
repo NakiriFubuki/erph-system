@@ -97,6 +97,7 @@ erph-system/
 ├── config.php              # App & database settings
 ├── db.php                  # PDO connection
 ├── seed_basic_data.sql     # Demo content seed
+├── sql/                    # Fresh install schema scripts
 ├── docs/screenshots/       # README screenshots
 ├── public/                 # Web root
 │   ├── login_roles.php
